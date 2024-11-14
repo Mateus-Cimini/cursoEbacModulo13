@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap-css.min.css">
+    <title>Carousel - Bootstrap</title>
+    <style>
+        body{
+            background-color: #ff4444;
+        }
+    </style>
+</head>
+<body>
+    <h1>Carousel - Bootstrap</h1>
+
+    <div class="container">
+        <div id="carouselExemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://images7.alphacoders.com/536/thumb-1920-536426.png"  alt="">
+                    <div class="carousel-caption">
+                        Project Yasou 
+                    </div>
+                </div>
+    
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://img.uhdpaper.com/wallpaper/project-zeri-lol-skin-splash-art-wild-rift-665@1@j"  alt="">
+                    <div class="carousel-caption">
+                        Project Zeri
+                    </div>
+                </div>
+    
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://leaguetips.gg/wp-content/uploads/2022/04/best-project-skins-in-league-of-legends.jpg"  alt="">
+                    <div class="carousel-caption">
+                        Project Master-Yi
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carouselExemplo" data-bs-slide="prev" class="carousel-control-prev" type="button" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+    
+            <button data-bs-target="#carouselExemplo" data-bs-slide="next" class="carousel-control-next"><span class="carousel-control-next-icon"></span></button>
+    
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#carouselExemplo" data-bs-slide-to="0" type="button" ></button>
+                <button class="" data-bs-target="#carouselExemplo" data-bs-slide-to="1" type="button" ></button>
+                <button class="" data-bs-target="#carouselExemplo" data-bs-slide-to="2" type="button" ></button>
+            </div>
+        </div>
+    
+    </div>
+    <script src="lib/bootstrap.bundle-js.min.js"></script>
+</body>
+</html>
