@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap-css.min.css">
+    <title>Modal - Bootstrap</title>
+</head>
+<body>
+    <h1> Modal - Bootstrap </h1>
+
+    <button data-bs-toggle="modal" data-bs-target="#test" class="btn btn-success">
+        Abrir Modal
+    </button>
+
+    <div id="test" class="modal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Titulo do modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odit sit ea tenetur ex ipsa commodi aspernatur</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-success">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle-js.min.js"></script>
+    <!-- Script para abrir o modal depois de 3 segundos (3000 milisegundos) que a pagina se carregou por completo, apenas como demostrativo-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modalTest = new bootstrap.Modal('#test');
+            setTimeout(function() {
+                modalTest.show();
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
